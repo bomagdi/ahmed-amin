@@ -7,6 +7,7 @@ import LinkButton from "../components/LinkButton";
 
 import satNaing from "../public/satnaing-illustration.webp";
 import laptop from "../public/laptop-illustration.webp";
+import CvButton from "@/components/CvButton";
 
 const HeroSection: React.FC = () => {
   const sectionRef = useRef(null);
@@ -90,7 +91,7 @@ const HeroSection: React.FC = () => {
         aria-hidden="true"
         className="bg-text absolute -top-36 rotate-12 text-gray-100 dark:text-[#1f2e3a] text-9xl scale-150 tracking-wide font-bold select-none pointer-events-none text-center z-0"
       >
-        PASSIONATE PROGRAMMER FREELANCER FULL-STACK DEVELOPER
+        EXPERIENCED ACCOUNTANT FINANCIAL ADVISOR BOOKKEEPER
       </span>
 
       <div className="image-animation z-10 select-none mt-0 xs:mt-6 sm:mt-14 lg:mt-0 px-0 mx-auto lg:p-0 lg:basis-1/3">
@@ -140,9 +141,13 @@ const HeroSection: React.FC = () => {
             help you manage your finances and achieve your goals with ease.
           </p>
         </div>
-        <LinkButton href={`mailto:aboeyad33550@gmail.com`}>
-          Contact me!
-        </LinkButton>
+        <div className="flex flex-col md:flex-row gap-6">
+          <LinkButton href={`mailto:aboeyad33550@gmail.com`}>
+            Contact me!
+          </LinkButton>
+
+          <CvButton />
+        </div>
       </div>
       <a
         href="#whoami"

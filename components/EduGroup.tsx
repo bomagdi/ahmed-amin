@@ -68,7 +68,7 @@ const EduGroup: React.FC<Props> = ({ edu }) => {
       </div>
       <ul
         role="list"
-        className=" marker:text-marrsgreen dark:marker:text-carrigreen list-disc pl-6 space-y-1 mt-1"
+        className=" marker:text-marrsgreen dark:marker:text-carrigreen list-disc pl-6 space-y-1 mt-1 grid grid-cols-2"
       >
         {edu.list.map((li) => (
           <li key={li} className={`edu-list`}>
