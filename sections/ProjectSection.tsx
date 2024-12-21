@@ -8,7 +8,7 @@ import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
-import terminalPortfolio from "public/projects/terminal-portfolio.webp";
+import preparingFinancial from "public/projects/Preparing financial.jpg";
 import haruFashion from "public/projects/haru-fashion.webp";
 import haruApi from "public/projects/haru-api.webp";
 import astroPaper from "public/projects/astro-paper.webp";
@@ -40,12 +40,14 @@ const ProjectSection: React.FC = () => {
           order={1}
           show={isOnScreen}
         >
-          <h2 className="section-heading">Featured Projects</h2>
+          <h2 className="section-heading">My Certifications</h2>
         </RoughNotation>
       </div>
       <span className="project-desc text-center block mb-4" ref={elementRef}>
-        “Talk is cheap. Show me the code”? I got you. <br />
-        Here are some of my projects you shouldn't misss
+        "Talk is cheap. Show me the proof"? I’ve got you.
+        <br />
+        Here are some of my certifications that showcase my expertise and
+        dedication!"
       </span>
       <div className="flex flex-wrap">
         {projects.map((project, index) => (
@@ -86,23 +88,23 @@ const projects = [
     githubApi: "https://api.github.com/repos/satnaing/astro-paper",
   },
   {
-    title: "Terminal Portfolio",
-    type: "Frontend",
+    title: "Preparing financial statements in a professional manner",
+    type: "Accounting",
     image: (
       <Image
-        src={terminalPortfolio}
+        src={preparingFinancial}
         sizes="100vw"
         fill
-        alt="Terminal Portfolio"
+        alt="Preparing financial statements in a professional manner"
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "My portfolio website in terminal version developed with React and TypeScript. ",
-    tags: ["React", "TypeScript", "Styled-Components"],
-    liveUrl: "https://terminal.satnaing.dev/",
-    codeUrl: "https://github.com/satnaing/terminal-portfolio",
+    desc: "A comprehensive course on how to prepare financial statements in a professional manner. Learn how to analyze financial statements and make informed decisions.",
+    tags: ["Accounting", "Financial Analysis", "Financial Reporting"],
+    liveUrl: "https://www.imghost.net/ib/AD4g52rDIPokf6M_1733925346.jpg",
+   
     bgColor: "bg-[#B4BEE0]",
-    githubApi: "https://api.github.com/repos/satnaing/terminal-portfolio",
+    githubApi: "",
   },
   {
     title: "Haru Fashion",
