@@ -101,6 +101,16 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
               {project.title}
             </h3>
             <div className="flex items-center space-x-5 sm:space-x-3 my-2 sm:my-0 mr-[0.1rem]">
+           
+              <a
+                href={project.codeUrl}
+                title={`See '${project.title}' on Github`}
+                target="_blank"
+                rel="noreferrer"
+                className="focus-visible:outline-marrsgreen dark:focus-visible:outline-carrigreen mr-1 rounded-full"
+              >
+              
+              </a>
               <a
                 href={project.liveUrl}
                 title={`See live demo of '${project.title}'`}

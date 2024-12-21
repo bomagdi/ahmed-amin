@@ -31,7 +31,7 @@ const ProjectSection: React.FC = () => {
   }, [onSectionChange, projectSection]);
 
   return (
-    <section ref={sectionRef} id="projects" className="section">
+    <section ref={sectionRef} id="certifications" className="section">
       <div className="project-title text-center">
         <RoughNotation
           type="underline"
@@ -99,10 +99,10 @@ const projects = [
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "A comprehensive course on how to prepare financial statements in a professional manner. Learn how to analyze financial statements and make informed decisions.",
-    tags: ["Accounting", "Financial Analysis", "Financial Reporting"],
+    desc: "A course on how to prepare financial statements in a professional manner.",
+    tags: ["Accounting", "Finance"],
     liveUrl: "https://www.imghost.net/ib/AD4g52rDIPokf6M_1733925346.jpg",
-   
+    codeUrl: "",
     bgColor: "bg-[#B4BEE0]",
     githubApi: "",
   },
